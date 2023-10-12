@@ -63,7 +63,17 @@
                 </div>
                 <div class="mb-3 col-md-12 col-sm-12">
                     <label for="katagori" class="form-label">Katagori</label>
-                    <input type="text" class="form-control" id="katagori" name="katagori" value="{{ old('judul') }}">
+                    <select class="form-control" id="katagori" name="katagori" value="{{ old('judul') }}">
+                        <option value="uncategorized">Uncategorized</option>
+                        <option value="sci-fi">Science Fiction</option>
+                        <option value="novel">Novel</option>
+                        <option value="history">History</option>
+                        <option value="biography">Biography</option>
+                        <option value="romance">Romance</option>
+                        <option value="education">Education</option>
+                        <option value="culinary">Culinary</option>
+                        <option value="comic">Comic</option>
+                      </select>
                 </div>
                 <div class="mb-3 col-md-12 col-sm-12">
                     <label for="penerbit" class="form-label">Penerbit</label>
