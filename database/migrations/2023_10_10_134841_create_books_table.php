@@ -13,11 +13,11 @@ return new class extends Migration
     {
         Schema::create('books', function (Blueprint $table) {
             $table->id();
-            $table->integer('isbn');
-            $table->text('judul');
+            $table->char('isbn',13);
+            $table->string('judul');
             $table->integer('halaman')->default (0);
-            $table->text('katagori');
-            $table->text('penerbit');
+            $table->string('katagori')->default ('uncategorized');
+            $table->string('penerbit');
             $table->timestamps();
         });
     }

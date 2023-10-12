@@ -15,7 +15,7 @@ class BookSeeder extends Seeder
     {
         $faker = \Faker\Factory::create();
         for ($i = 0; $i < 20; $i++) {
-            $isbn = $faker->numberBetween(30,100);
+            $isbn = $faker->numberBetween(0,100);
             $judul = $faker->sentence(6);
             $halaman = $faker->numberBetween(0,2);
             $katagori = $faker->sentence(6);
