@@ -63,7 +63,8 @@
                 </div>
                 <div class="mb-3 col-md-12 col-sm-12">
                     <label for="katagori" class="form-label">Katagori</label>
-                    <select class="form-control" id="katagori" name="katagori" value="{{ old('judul') }}">
+                    <select class="form-select" id="katagori" name="katagori">
+                        <option value="">Pilih Katagory ...</option>
                         <option value="uncategorized">Uncategorized</option>
                         <option value="sci-fi">Science Fiction</option>
                         <option value="novel">Novel</option>
